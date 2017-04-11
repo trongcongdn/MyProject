@@ -34,3 +34,6 @@ GraphicsTest/CEngine/Debug/vc120.idb
 *.pdb
 GraphicsTest/Debug/Game2dGraphicdoth.ilk
 *.opensdf
+*.sdf
+GraphicsTest/Game2dGraphicdoth.sdf
+*.sdf
