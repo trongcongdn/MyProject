@@ -37,3 +37,5 @@ GraphicsTest/Debug/Game2dGraphicdoth.ilk
 *.sdf
 GraphicsTest/Game2dGraphicdoth.sdf
 *.sdf
+*.suo
+GraphicsTest/Game2dGraphicdoth.v12.suo
