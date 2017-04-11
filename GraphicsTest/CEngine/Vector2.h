@@ -1,0 +1,50 @@
+//cong.nt created this
+#pragma once
+const float PI = 3.14159265359f;
+class vector2f {
+public:
+	float x, y;
+	vector2f();
+	vector2f(float x, float y);
+	vector2f(float xy);
+	vector2f operator+ (const float &num) const;
+	vector2f operator- (const float &num) const;
+	vector2f operator* (const float &num) const;
+	vector2f operator/ (const float &num) const;
+	vector2f operator+ (const vector2f &vt) const;
+	vector2f operator- (const vector2f &vt) const;
+	vector2f operator* (const vector2f &vt) const;
+	vector2f operator/ (const vector2f &vt) const;
+	void operator+= (const float &num);
+	void operator-= (const float &num);
+	void operator*= (const float &num);
+	void operator/= (const float &num);
+	void operator+= (const vector2f &vt);
+	void operator-= (const vector2f &vt);
+	void operator*= (const vector2f &vt);
+	void operator/= (const vector2f &vt);
+	float get_sum() const;
+	float lengh() const;
+	float lengh_square() const;
+	float distance_with(const vector2f &vt) const;
+	float distance_square_with(const vector2f &vt) const;
+	static float distance_between(const vector2f &vt1, const vector2f &vt2);
+	static float distance_square_between(const vector2f &vt1, const vector2f &vt2);
+	float dot_product_with(const vector2f &vt) const;
+	static float normalize_radian(const float &radian);
+	static float normalize_angle(const float &angle);
+	void normalize();
+	vector2f get_normalize() const;
+	static vector2f normalize_vector2f(const vector2f &vt);
+	static float angle_to_radian(const float &angle);
+	static float radian_to_angle(const float &radian);
+	float angel_with(const vector2f &vt) const;
+	static float angel_between(const vector2f &vt1, const vector2f &vt2);
+	float radian_with(const vector2f &vt) const;
+	static float radian_between(const vector2f &vt1, const vector2f &vt2);
+	vector2f get_othogonal() const;
+	void rotateA(const float &angle, const vector2f &vt2);
+	void rotateR(const float &radian, const vector2f &vt2);
+	vector2f getRotateA(const float &angle, const vector2f &vt2);
+	vector2f getRotateR(const float &radian, const vector2f &vt2);
+};
