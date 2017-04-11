@@ -2,6 +2,7 @@
 #include "Object.h"
 const int MIN_SIZE_VERTEX = 3;
 const int MAX_SIZE_VERTEX = 8;
+class Player;
 class DarkShape :
 	public Object
 {
@@ -11,7 +12,7 @@ public:
 
 	void Init() override;
 	void handleInput(const MouseInput &mouseInput, const KeyInput &keyInput, const float &dt) override;
-	void update(const float &dt) override;
+	void update(const float &dt, Player *player);
 	void draw() override;
 
 	/*void setPosition(const vector2f &pos) {

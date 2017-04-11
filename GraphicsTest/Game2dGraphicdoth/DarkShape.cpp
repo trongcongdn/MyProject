@@ -86,7 +86,7 @@ void DarkShape::goBack(){
 	}
 }
 
-void DarkShape::update(const float &dt){
+void DarkShape::update(const float &dt, Player *player){
 	vector2f playerPos = GamePlayState::getPlayer()->getPosition();
 	if (m_shapDef.type == MathHelper::ShapeType::kPolygon)
 	{
