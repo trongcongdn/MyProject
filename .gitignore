@@ -27,3 +27,9 @@
 *.exe
 *.out
 *.app
+*.log
+*.lastbuildstate
+*.tlog
+GraphicsTest/CEngine/Debug/vc120.idb
+*.pdb
+GraphicsTest/Debug/Game2dGraphicdoth.ilk
